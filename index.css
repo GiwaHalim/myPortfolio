@@ -30,10 +30,12 @@
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-out;
+    pointer-events: none;
   }
   .sub-hero.open {
     clip-path: circle(900px at 90% -10%);
     -webkit-clip-path: circle(900px at 90% -10%);
+    pointer-events: all;
   }
   .hero {
     position: relative;
