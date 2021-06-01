@@ -5,21 +5,59 @@
 }
 .hero {
   background: rgb(23, 23, 85);
-  position: relative;
+  height: 10vh;
 }
 .sub-hero {
+  height: 100%;
+  display: flex;
   color: white;
   width: 50%;
-  margin-left: 50%;
-  padding: 2em;
-  font-size: 1.5vw;
-  display: flex;
+  margin-left: auto;
   justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .sub-hero {
+    position: fixed;
+    background-color: rgb(23, 23, 85);
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 50%;
+    z-index: 0;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+  .sub-hero.open {
+    clip-path: circle(900px at 90% -10%);
+    -webkit-clip-path: circle(900px at 90% -10%);
+  }
+  .hero {
+    position: relative;
+  }
+  .toggler {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    z-index: 1;
+    cursor: pointer;
+    transform: translate(-10%, -50%);
+  }
+  .line {
+    margin: 5px;
+    width: 30px;
+    height: 3px;
+    background: white;
+  }
 }
 
 .sub-hero a {
   text-decoration: none;
   color: white;
+  font-size: 16px;
 }
 
 .container1 {
