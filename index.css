@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
 .hero {
   background: rgb(23, 23, 85);
@@ -122,35 +123,82 @@
   .sub-container2-1 {
     padding: 5px;
     width: 100%;
-    font-size: 16px;
   }
 }
 .container3 {
   display: flex;
   justify-content: center;
   background: rgb(23, 23, 85);
+  padding-top: 5%;
 }
 .sub-container3-g {
   color: white;
-  border: solid white;
   width: 60%;
 }
 .sub-container3-1 {
-  border: solid red;
   display: flex;
   justify-content: center;
+  font-size: 30px;
+  padding: 5%;
 }
 .grider1 {
   display: grid;
   grid-template-columns: 50% 50%;
-  border: solid greenyellow;
   font-size: large;
-}
-.grider1 > div > p {
-  display: inline-block;
-  margin: 0%;
 }
 .grider1 img {
   float: left;
   padding: 2px;
+}
+.per {
+  margin-left: 80%;
+}
+.count {
+  height: 5px;
+  width: 80%;
+  background: white;
+}
+.counter1 {
+  height: 100%;
+  width: 90%;
+  background: red;
+}
+.liner {
+  margin-top: 20px;
+  width: 70%;
+  float: right;
+}
+
+.grider2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: large;
+  padding-top: 5%;
+}
+@media screen and (max-width: 1300px) {
+  .grider1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grider1 img {
+    width: 10%;
+  }
+  .grider2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grider2 img {
+    width: 10%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .grider1 img {
+    width: 20%;
+  }
+  .liner {
+    margin-top: 0;
+  }
+  .grider2 img {
+    width: 20%;
+  }
 }
