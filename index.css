@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 .hero {
   background: rgb(23, 23, 85);
@@ -19,7 +19,7 @@
   padding-right: 5%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .sub-hero {
     position: fixed;
     background-color: rgb(23, 23, 85);
@@ -29,14 +29,14 @@
     padding-top: 20%;
     padding-bottom: 50%;
     z-index: 0;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 100% -20%);
+    -webkit-clip-path: circle(100px at 100% -20%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
   .sub-hero.open {
-    clip-path: circle(900px at 90% -10%);
-    -webkit-clip-path: circle(900px at 90% -10%);
+    clip-path: circle(900px at 100% -20%);
+    -webkit-clip-path: circle(900px at 100% -20%);
     pointer-events: all;
   }
   .hero {
@@ -70,6 +70,7 @@
   display: flex;
   align-items: center;
   padding-left: 10%;
+  padding-top: 20%;
 }
 
 .sub-container1 {
@@ -78,7 +79,7 @@
   width: 40%;
   font-size: 30px;
   max-width: 3000px;
-  /* border: solid white; */
+  overflow: visible;
 }
 
 .sub-container1 a {
@@ -201,4 +202,22 @@
   .grider2 img {
     width: 20%;
   }
+}
+.container4 {
+  background: rgb(23, 23, 85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.sub-container4-1 {
+  padding: 5%;
+  font-size: 1.5em;
+}
+
+.container5 {
+  background: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
